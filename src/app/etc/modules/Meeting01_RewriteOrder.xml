@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Meeting01_RewriteOrder>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Meeting01_RewriteOrder>
+    </modules>
+</config>
