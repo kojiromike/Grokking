@@ -1,2 +1,4 @@
 src/app/code/community/Meeting01 app/code/community/Meeting01
 src/app/etc/modules/Meeting01_RewriteOrder.xml app/etc/modules/Meeting01_RewriteOrder.xml
+src/app/code/community/Meeting02 app/code/community/Meeting02
+src/app/etc/modules/Meeting02_RedirectRoot.xml app/etc/modules/Meeting02_RedirectRoot.xml
