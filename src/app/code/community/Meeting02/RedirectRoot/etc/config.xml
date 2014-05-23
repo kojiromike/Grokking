@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <config>
     <global>
-        <models>
-            <sales>
-                <rewrite>
-                    <order>Meeting01_RewriteOrder_Model_Sales_Order</order>
-                </rewrite>
-            </sales>
-        </models>
+        <events>
+            <cms_controller_router_match_before>
+                <observers>
+                    <meeting02_redirectroot>
+                        <class>Meeting02_RedirectRoot_Model_Observer</class>
+                        <method>cmsControllerRouterMatchBefore</method>
+                    </meeting02_redirectroot>
+                </observers>
+            </cms_controller_router_match_before>
+        </events>
     </global>
 </config>
