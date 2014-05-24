@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <global>
+        <events>
+            <cms_controller_router_match_before>
+                <observers>
+                    <meeting02_redirectroot>
+                        <class>Meeting02_RedirectRoot_Model_Observer</class>
+                        <method>cmsControllerRouterMatchBefore</method>
+                    </meeting02_redirectroot>
+                </observers>
+            </cms_controller_router_match_before>
+        </events>
+    </global>
+</config>
