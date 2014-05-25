@@ -26,23 +26,18 @@
 /**
  * Assign a redirect before routing home
  *
- * @category    Meeting02
- * @package     Meeting02_RewriteOrder
+ * @category    Meeting03
+ * @package     Meeting03_CustomController
  */
-class Meeting02_RedirectRoot_Model_Observer
+class Meeting03_CustomController_IndexController extends Mage_Core_Controller_Front_Action
 {
     /**
-     * Assign a redirect before routing home
+     * Return the full action name
      *
-     * @param Varien_Event_Observer $observer
-     * @return Meeting02_RedirectRoot_Model_Observer
+     * @return null
      */
-    public function cmsControllerRouterMatchBefore(Varien_Event_Observer $observer)
+    public function indexAction()
     {
-        $condition = $observer->getEvent()->getCondition();
-        if ($condition->getIdentifier() === 'home') {
-            $condition->setRedirectUrl(Mage::getBaseUrl());
-        }
-        return $this;
+        $this->getResponse()->setBody($this->getFullActionName());
     }
 }
