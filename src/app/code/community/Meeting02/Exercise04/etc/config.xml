@@ -2,16 +2,16 @@
 <config>
     <frontend>
         <routers>
-            <meeting04_Customer>
+            <meeting02_Exercise04>
                 <use>standard</use>
                 <args>
-                    <module>Meeting04_Customer</module>
+                    <module>Meeting02_Exercise04</module>
                     <frontName>customer</frontName>
                     <modules>
-                        <meeting04_customer before="Mage_Customer">Meeting04_Customer</meeting04_customer>
+                        <meeting02_exercise04 before="Mage_Customer">Meeting02_Exercise04</meeting02_exercise04>
                     </modules>
                 </args>
-            </meeting04_Customer>
+            </meeting02_Exercise04>
         </routers>
     </frontend>
 </config>

@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <Meeting03_CustomController>
+        <Meeting02_Exercise03>
             <active>true</active>
             <codePool>community</codePool>
-        </Meeting03_CustomController>
+        </Meeting02_Exercise03>
     </modules>
 </config>

@@ -19,17 +19,17 @@
  * needs please refer to http://www.magentocommerce.com for more information.
  *
  * @category    Meeting02
- * @package     Meeting02_RedirectToRoot
+ * @package     Meeting02_Exercise03
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
 /**
  * Assign a redirect before routing home
  *
- * @category    Meeting03
- * @package     Meeting03_CustomController
+ * @category    Meeting02
+ * @package     Meeting02_Exercise03
  */
-class Meeting03_CustomController_IndexController extends Mage_Core_Controller_Front_Action
+class Meeting02_Exercise03_IndexController extends Mage_Core_Controller_Front_Action
 {
     /**
      * Return the full action name

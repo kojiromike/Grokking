@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <Meeting02_RedirectRoot>
+        <Meeting02_Exercise04>
             <active>true</active>
             <codePool>community</codePool>
-        </Meeting02_RedirectRoot>
+        </Meeting02_Exercise04>
     </modules>
 </config>

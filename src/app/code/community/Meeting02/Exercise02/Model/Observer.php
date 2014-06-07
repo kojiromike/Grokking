@@ -19,23 +19,24 @@
  * needs please refer to http://www.magentocommerce.com for more information.
  *
  * @category    Meeting02
- * @package     Meeting02_RedirectToRoot
+ * @package     Meeting02_Exercise02
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
 /**
- * Assign a redirect before routing home
+ * Create an observer that redirects the visitor to the base URL
+ * if the CMS home page URL key is accessed directly (i.e. /home -> /).
  *
  * @category    Meeting02
- * @package     Meeting02_RewriteOrder
+ * @package     Meeting02_Exercise02
  */
-class Meeting02_RedirectRoot_Model_Observer
+class Meeting02_Exercise02_Model_Observer
 {
     /**
      * Assign a redirect before routing home
      *
      * @param Varien_Event_Observer $observer
-     * @return Meeting02_RedirectRoot_Model_Observer
+		 * @return self
      */
     public function cmsControllerRouterMatchBefore(Varien_Event_Observer $observer)
     {
@@ -46,3 +47,4 @@ class Meeting02_RedirectRoot_Model_Observer
         return $this;
     }
 }
+

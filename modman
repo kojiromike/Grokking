@@ -1,8 +1,2 @@
-src/app/code/community/Meeting01 app/code/community/Meeting01
-src/app/etc/modules/Meeting01_RewriteOrder.xml app/etc/modules/Meeting01_RewriteOrder.xml
-src/app/code/community/Meeting02 app/code/community/Meeting02
-src/app/etc/modules/Meeting02_RedirectRoot.xml app/etc/modules/Meeting02_RedirectRoot.xml
-src/app/code/community/Meeting03 app/code/community/Meeting03
-src/app/etc/modules/Meeting03_CustomController.xml app/etc/modules/Meeting03_CustomController.xml
-src/app/code/community/Meeting04 app/code/community/Meeting04
-src/app/etc/modules/Meeting04_Customer.xml app/etc/modules/Meeting04_Customer.xml
+src/app/code/community/* app/code/community/
+src/app/etc/modules/*.xml app/etc/modules/

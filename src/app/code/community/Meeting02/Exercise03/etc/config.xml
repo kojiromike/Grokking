@@ -2,13 +2,13 @@
 <config>
     <frontend>
         <routers>
-            <meeting03_CustomController>
+            <meeting02_Exercise03>
                 <use>standard</use>
                 <args>
-                    <module>Meeting03_CustomController</module>
+                    <module>Meeting02_Exercise03</module>
                     <frontName>custom</frontName>
                 </args>
-            </meeting03_CustomController>
+            </meeting02_Exercise03>
         </routers>
     </frontend>
 </config>

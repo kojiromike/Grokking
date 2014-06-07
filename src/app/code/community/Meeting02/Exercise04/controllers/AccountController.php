@@ -19,18 +19,18 @@
  * needs please refer to http://www.magentocommerce.com for more information.
  *
  * @category    Meeting02
- * @package     Meeting02_RedirectToRoot
+ * @package     Meeting02_Exercise04
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
 /**
  * Assign a redirect before routing home
  *
- * @category    Meeting04
- * @package     Meeting04_Customer
+ * @category    Meeting02
+ * @package     Meeting02_Exercise04
  */
 require_once(Mage::getModuleDir('controllers', 'Mage_Customer') . DS . 'AccountController.php');
-class Meeting04_Customer_AccountController extends Mage_Customer_AccountController
+class Meeting02_Exercise04_AccountController extends Mage_Customer_AccountController
 {
     /**
      * Log in and redirect to a category page

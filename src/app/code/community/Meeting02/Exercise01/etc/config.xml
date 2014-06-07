@@ -4,7 +4,7 @@
         <models>
             <sales>
                 <rewrite>
-                    <order>Meeting01_RewriteOrder_Model_Sales_Order</order>
+                    <order>Meeting02_Exercise01_Model_Sales_Order</order>
                 </rewrite>
             </sales>
         </models>
