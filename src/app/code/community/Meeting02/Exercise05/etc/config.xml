@@ -1,0 +1,13 @@
+<config>
+    <global>
+        <helpers>
+            <Meeting02_Exercise05>
+                <rewrite>
+                    <Mage_Payment_Helper>
+                        <class>Meeting02_Exercise05_Helper</class>
+                    </Mage_Payment_Helper>
+                </rewrite>
+            </Meeting02_Exercise05>
+        </helpers>
+    </global>
+</config>
