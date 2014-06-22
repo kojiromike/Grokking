@@ -1,3 +1,4 @@
 src/app/code/community/* app/code/community/
+src/app/design/frontend/enterprise/default/layout/local.xml app/design/frontend/enterprise/default/layout/
 src/app/etc/modules/*.xml app/etc/modules/
 src/shell/* shell/
