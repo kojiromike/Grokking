@@ -1,0 +1,16 @@
+<config>
+    <modules>
+        <Meeting04_Exercise01>
+            <version>1.0</version>
+        </Meeting04_Exercise01>
+    </modules>
+    <global>
+        <resources>
+            <meeting0401_setup>
+                <setup>
+                    <module>Meeting04_Exercise01</module>
+                </setup>
+            </meeting0401_setup>
+        </resources>
+    </global>
+</config>
