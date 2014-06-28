@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <frontend>
+        <routers>
+            <meeting03_Exercise04>
+                <use>standard</use>
+                <args>
+                    <module>Meeting03_Exercise04</module>
+                    <frontName>upHandle</frontName>
+                </args>
+            </meeting03_Exercise04>
+        </routers>
+    </frontend>
+</config>

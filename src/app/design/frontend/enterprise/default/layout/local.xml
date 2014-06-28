@@ -1,2 +1,45 @@
 <?xml version="1.0"?>
-<layout version="0.1.0"/>
+<layout version="0.1.0">
+    <default>
+        <!-- Meeting 3 Exercise 1 -->
+        <reference name="left">
+            <block type="core/template" name="date" template="meeting03/exercise01.phtml"/>
+        </reference>
+
+        <!-- Meeting 3 Exercise 2 -->
+        <remove name="checkout.links"/>
+
+        <!-- Meeting 3 Exercise 4 -->
+        <block type="core/text" name="chickens">
+            <action method="setText"><text>Nobody here but us chickens.</text></action>
+        </block>
+
+        <!-- Meeting 3 Exercise 5 -->
+        <reference name="breadcrumbs">
+            <action method="addCrumb">
+                <crumb_name>Hardcoded</crumb_name>
+                <crumb_info>
+                    <label>The googs</label>
+                    <title>Google</title>
+                    <link>http://google.com/</link>
+                </crumb_info>
+            </action>
+        </reference>
+    </default>
+
+    <!-- Meeting 3 Exercise 3 -->
+    <customer_account>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/1column.phtml</template>
+            </action>
+        </reference>
+    </customer_account>
+    <customer_account_index>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/1column.phtml</template>
+            </action>
+        </reference>
+    </customer_account_index>
+</layout>
