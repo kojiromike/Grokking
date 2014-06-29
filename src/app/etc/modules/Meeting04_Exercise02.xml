@@ -1,0 +1,9 @@
+<config>
+	<modules>
+		<Meeting04_Exercise02>
+			<active>true</active>
+			<codePool>community</codePool>
+		</Meeting04_Exercise02>
+	</modules>
+</config>
+
