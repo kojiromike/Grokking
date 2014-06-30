@@ -1,0 +1,30 @@
+<config>
+    <modules>
+        <Meeting04_Exercise03>
+            <version>1.1</version>
+        </Meeting04_Exercise03>
+    </modules>
+    <global>
+        <models>
+            <meeting0403>
+                <class>Meeting04_Exercise03_Model</class>
+                <resourceModel>meeting0403_resource</resourceModel>
+            </meeting0403>
+            <meeting0403_resource>
+                <class>Meeting04_Exercise03_Model_Resource</class>
+                <entities>
+                    <comment>
+                        <table>meeting0403_comment</table>
+                    </comment>
+                </entities>
+            </meeting0403_resource>
+        </models>
+        <resources>
+            <meeting0403_setup>
+                <setup>
+                    <module>Meeting04_Exercise03</module>
+                </setup>
+            </meeting0403_setup>
+        </resources>
+    </global>
+</config>
