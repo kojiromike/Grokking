@@ -1,5 +1,5 @@
 src/app/code/community/* app/code/community/
-src/app/design/frontend/enterprise/default/layout/local.xml app/design/frontend/enterprise/default/layout/
-src/app/design/frontend/enterprise/default/template/meeting03/* app/design/frontend/enterprise/default/template/meeting03/
+src/app/design/frontend/enterprise/default/layout/meeting04.xml app/design/frontend/enterprise/default/layout/local.xml
+src/app/design/frontend/enterprise/default/template/meeting* app/design/frontend/enterprise/default/template/
 src/app/etc/modules/*.xml app/etc/modules/
 src/shell/* shell/

@@ -1,0 +1,35 @@
+<config>
+    <modules>
+        <Meeting04_Exercise04>
+            <version>1.1</version>
+        </Meeting04_Exercise04>
+    </modules>
+    <global>
+        <blocks>
+            <meeting0404>
+                <class>Meeting04_Exercise04_Block</class>
+            </meeting0404>
+        </blocks>
+        <models>
+            <meeting0404>
+                <class>Meeting04_Exercise04_Model</class>
+                <resourceModel>meeting0404_resource</resourceModel>
+            </meeting0404>
+            <meeting0404_resource>
+                <class>Meeting04_Exercise04_Model_Resource</class>
+                <entities>
+                    <comment>
+                        <table>meeting0404_comment</table>
+                    </comment>
+                </entities>
+            </meeting0404_resource>
+        </models>
+        <resources>
+            <meeting0404_setup>
+                <setup>
+                    <module>Meeting04_Exercise04</module>
+                </setup>
+            </meeting0404_setup>
+        </resources>
+    </global>
+</config>
