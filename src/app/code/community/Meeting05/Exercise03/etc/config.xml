@@ -1,0 +1,30 @@
+<config>
+    <modules>
+        <Meeting05_Exercise03>
+            <version>1.1</version>
+        </Meeting05_Exercise03>
+    </modules>
+    <global>
+        <models>
+            <meeting0503>
+                <class>Meeting05_Exercise03_Model</class>
+                <resourceModel>meeting0503_resource</resourceModel>
+            </meeting0503>
+            <meeting0503_resource>
+                <class>Meeting05_Exercise03_Model_Resource</class>
+                <entities>
+                    <comment>
+                        <table>meeting0503_comment</table>
+                    </comment>
+                </entities>
+            </meeting0503_resource>
+        </models>
+        <resources>
+            <meeting0503_setup>
+                <setup>
+                    <module>Meeting05_Exercise03</module>
+                </setup>
+            </meeting0503_setup>
+        </resources>
+    </global>
+</config>

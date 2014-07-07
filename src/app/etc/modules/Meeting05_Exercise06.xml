@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Meeting05_Exercise06>
+      <active>true</active>
+      <codePool>community</codePool>
+    </Meeting05_Exercise06>
+  </modules>
+</config>

@@ -1,0 +1,22 @@
+<config>
+    <modules>
+        <Meeting05_Exercise02>
+            <version>1.0</version>
+        </Meeting05_Exercise02>
+    </modules>
+    <global>
+        <models>
+            <meeting0502>
+                <class>Meeting05_Exercise02_Model</class>
+                <resourceModel>meeting0502_resource</resourceModel>
+            </meeting0502>
+        </models>
+        <resources>
+            <meeting0502_setup>
+                <setup>
+                    <module>Meeting05_Exercise02</module>
+                </setup>
+            </meeting0502_setup>
+        </resources>
+    </global>
+</config>
