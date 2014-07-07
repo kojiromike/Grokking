@@ -9,6 +9,7 @@
             <meeting0501_setup>
                 <setup>
                     <module>Meeting05_Exercise01</module>
+                    <class>eav/entity_setup</class>
                 </setup>
             </meeting0501_setup>
         </resources>

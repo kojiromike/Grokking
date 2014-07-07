@@ -1,27 +1,44 @@
 <?php
 
+/**
+ * Use a setup script to add a catalog/product select attribute using the Magento
+ * eav/entity_attribute_source_table. Also add some options.
+ */
 return call_user_func(
 /**
  * Set up comments
  *
- * @param Mage_Core_Model_Resource_Setup $installer
+ * @param Mage_Eav_Model_Entity_Setup $installer
+ * @param Varien_Db_Adapter_Interface $conn
  * @return bool true on success
  */
-function (Mage_Core_Model_Resource_Setup $installer) {
-    $commentTblName = 'meeting0501_comments';
-    $installer->startSetup();
-    $commentTable = $installer->getTable($commentTblName);
-    if (!$installer->tableExists($commentTable)) {
-        $conn = $installer->getConnection();
-        $tbl = $conn
-            ->newTable($commentTable)
-            ->addColumn('index', Varien_Db_Ddl_Table::TYPE_INTEGER, null, array(
-                'nullable' => false,
-                'primary' => true,
-                'identity' => true,
-            ))->addColumn('comment', Varien_Db_Ddl_Table::TYPE_TEXT, null, array(), 'The comment text');
-        $conn->createTable($tbl);
-    }
-    $installer->endSetup();
+function (Mage_Eav_Model_Entity_Setup $installer, Varien_Db_Adapter_Interface $conn) {
+    $options = array(
+        'zip',
+        'mild',
+        'moderate',
+        'much',
+        'starving',
+    );
+    $attr = array(
+        // 'backend' => 'int',
+        'type' => 'int',
+        // 'frontend' => 'select',
+        'input' => 'select',
+        'label' => 'Voraciousness',
+        // 'frontend_class' =>
+        'source' => 'eav/entity_attribute_source_table',
+        'required' => false,
+        // 'user_defined' =>
+        // 'default' =>
+        // 'unique' =>
+        'note' => 'Added by monkeys',
+        //'global' =>
+        'option' => array('values' => $options),
+    );
+    $installer
+        ->startSetup()
+        ->addAttribute('catalog_product', 'voraciousness', $attr)
+        ->endSetup();
     return true;
-}, $this);
+}, $this, $conn);
