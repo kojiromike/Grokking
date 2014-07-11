@@ -2,26 +2,33 @@
 
 return call_user_func(
 /**
- * Set up comments
+ * Add a customer/customer multi select attribute using a custom source and backend model.
+ * Make it possible to unset all options for that attribute on customers using the Admin interface.
  *
- * @param Mage_Core_Model_Resource_Setup $installer
+ * @param Mage_Eav_Model_Entity_Setup $installer
+ * @param Varien_Db_Adapter_Interface $conn
  * @return bool true on success
  */
-function (Mage_Core_Model_Resource_Setup $installer) {
-    $commentTblName = 'meeting0502_comments';
-    $installer->startSetup();
-    $commentTable = $installer->getTable($commentTblName);
-    if (!$installer->tableExists($commentTable)) {
-        $conn = $installer->getConnection();
-        $tbl = $conn
-            ->newTable($commentTable)
-            ->addColumn('id', Varien_Db_Ddl_Table::TYPE_INTEGER, null, array(
-                'nullable' => false,
-                'primary' => true,
-                'identity' => true,
-            ))->addColumn('text', Varien_Db_Ddl_Table::TYPE_TEXT, null, array(), 'The comment text');
-        $conn->createTable($tbl);
-    }
-    $installer->endSetup();
+function (Mage_Eav_Model_Entity_Setup $installer, Varien_Db_Adapter_Interface $conn) {
+    $attr = array(
+        'backend' => 'meeting0502/backend',
+        // 'type' => 'multiselect',
+        //'frontend' => 'select',
+        'input' => 'multiselect',
+        'label' => 'Sanctimony',
+        // 'frontend_class' =>
+        'source' => 'meeting0502/source',
+        'required' => false,
+        // 'user_defined' =>
+        // 'default' =>
+        // 'unique' =>
+        'note' => 'You did this to yourself',
+        //'global' =>
+        // 'option' => array('values' => $options),
+    );
+    $installer
+        ->startSetup()
+        ->addAttribute('customer', 'sanctimoniousness', $attr)
+        ->endSetup();
     return true;
-}, $this);
+}, $this, $conn);
